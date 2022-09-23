@@ -1,111 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Gold</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function(){
+     $('.dropdown-toggle').dropdown()
+ });
+</script>
 </head>
 <body>
-
-<div class="container">
-  <h1 style="text-align: center;">Gold items</h1>
-  <div class="row">
+  <nav class="navbar navbar-expand-sm bg-warning navbar-dark">
+    <div class="container-fluid">
+        <img src="./assets/images/icon.jpg" alt="Avatar Logo" style="width:60px;" class="rounded-pill">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+       
+      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html" style="color: black;"><i class="fa fa-home"style="font-size:24px"></i>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section1" style="color: black;"><i class="fa fa-info" style="font-size:24px"></i>AboutUs</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"style="color: black;" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categories 
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./silver.html">Silver</a>
+              <a class="dropdown-item" href="#">Platinam</a>
+              <a class="dropdown-item" href="#">Dimanod</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 mr-auto">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: black;"><i class="fa fa-shopping-cart" style="font-size:24px"></i>Cart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./from.html" style="color: black;"><i class="fa fa-user" style="font-size:24px"></i>Account</a>
+        </li>
+      </ul>
+      </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+  <div class="row" style="margin-top: 5px;">
     <div class="col-md-4">
-      <div class="thumbnail">
-        <a href="./assets/images/gold/bangel.jpg" target="_blank">
-          <img src="./assets/images/gold/bangel.jpg" alt="Lights" style="width:100%">
+        <div class="thumbnail border border-secondary">
+          <a href="./assets/images/gold/img1.jpg" target="_blank">
+            <img src="./assets/images/gold/img1.jpg" alt="Lights" style="width:100%">
+            <div class="caption">
+              <p style="text-align: center;">Black chain</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+       <div class="thumbnail border border-secondary">
+         <a href="./assets/images/gold/img1.jpeg" target="_blank">
+            <img src="./assets/images/gold/img1.jpeg" alt="Nature" style="width:100%">
+            <div class="caption">
+                <p style="text-align: center;">Earrings with Neckless</p>
+              </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+       <div class="thumbnail border border-secondary">
+        <a href="./assets/images/gold/img2.jpg" target="_blank">
+          <img src="./assets/images/gold/img2.jpg" alt="Fjords" style="width:100%">
           <div class="caption">
-            <p>Bangels</p>
+            <p style="text-align: center;">Earrings with </p>
           </div>
         </a>
       </div>
     </div>
+  </div>
+  <div class="row" style="margin-top: 5px;">
     <div class="col-md-4">
-      <div class="thumbnail">
-        <a href="./assets/images/gold/ear.jpeg" target="_blank">
-          <img src="./assets/images/gold/ear.jpeg" alt="Nature" style="width:100%">
-          <div class="caption">
-            <p>Earrings</p>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <a href="./assets/images/gold/gold1.jpg" target="_blank">
-          <img src="./assets/images/gold/gold1.jpg" alt="Fjords" style="width:100%">
-          <div class="caption">
-            <p>All items</p>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="col-md-4">
-        <div class="thumbnail">
-          <a href="./assets/images/gold/ear1.jpg" target="_blank">
-            <img src="./assets/images/gold/ear1.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <p>New Earrings</p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="thumbnail">
-          <a href="./assets/images/gold/gold5.webp" target="_blank">
-            <img src="./assets/images/gold/gold5.webp" alt="Nature" style="width:100%">
-            <div class="caption">
-              <p>Chain</p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="thumbnail">
-          <a href="./assets/images/gold/nevk1.jpg" target="_blank">
-            <img src="./assets/images/gold/nevk1.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <p>chain with earrings</p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="thumbnail">
-          <a href="./assets/images/gold/neck.jpg" target="_blank">
-            <img src="./assets/images/gold/neck.jpg" alt="Nature" style="width:100%">
-            <div class="caption">
-              <p>Neckless</p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="thumbnail">
+        <div class="thumbnail border border-secondary">
           <a href="./assets/images/gold/img.jpg" target="_blank">
             <img src="./assets/images/gold/img.jpg" alt="Nature" style="width:100%">
             <div class="caption">
-              <p>Chokar</p>
+              <p style="text-align: center;">Chokar</p>
             </div>
           </a>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="thumbnail">
-          <a href="./assets/images/gold/set.jpg" target="_blank">
-            <img src="./assets/images/gold/set.jpg" alt="Nature" style="width:100%">
+        <div class="thumbnail border border-secondary">
+          <a href="./assets/images/gold/img3.jpg" target="_blank">
+            <img src="./assets/images/gold/img3.jpg" alt="Nature" style="width:100%">
             <div class="caption">
-              <p>Pendent set</p>
+              <p style="text-align: center;">Chokar with earrings</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail border border-secondary">
+          <a href="./assets/images/gold/img4.webp" target="_blank">
+            <img src="./assets/images/gold/img4.webp" alt="Nature" style="width:100%">
+            <div class="caption">
+              <p style="text-align: center;">Earrings</p>
             </div>
           </a>
         </div>
       </div>
   </div>
+  <div class="row" style="margin-top: 5px;">
+      <div class="col-md-4">
+        <div class="thumbnail border border-secondary">
+          <a href="./assets/images/gold/img6.jpg" target="_blank">
+            <img src="./assets/images/gold/img6.jpg" alt="Nature" style="width:100%">
+            <div class="caption">
+              <p style="text-align: center;">Stone chokar</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail border border-secondary">
+          <a href="./assets/images/gold/img9.jpg" target="_blank">
+            <img src="./assets/images/gold/img9.jpg" alt="Nature" style="width:100%">
+            <div class="caption">
+              <p style="text-align: center;"> Chokar with Earrings</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail border border-secondary">
+          <a href="./assets/images/gold/img8.jpg" target="_blank">
+            <img src="./assets/images/gold/img8.jpg" alt="Nature" style="width:100%">
+            <div class="caption">
+              <p style="text-align: center;">Earrings</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-
+<hr>
+  <div id="section1" style="text-align: center; background-color: gold;color:black;">
+        <br>
+      <p>Contact Us:9876543210</p>
+      <p>Email:gold.items@gmail.com</p>
+      <address>
+        Address:<br>
+        Yeluru Road,Gudivada.<br>
+        Krishna,<br>
+        Andhra Pradesh. 
+      </address>
+      <p style="color: rgba(0,0,0,.7); text-shadow: 0 1px rgba(8, 8, 8, 0.1);">
+        © Copyright 2015 Company Name. All rights reserved.
+      </p>
+      <br>
+  </div>
 </body>
 </html>
 

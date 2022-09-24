@@ -18,6 +18,40 @@
       $('.dropdown-toggle').dropdown()
   });
   </script>
+  <style>
+    .col-md-4 {
+    float: left;
+    width: 25%;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* On screens that are 992px wide or less, go from four columns to two columns */
+  @media screen and (max-width: 992px) {
+    .col-md-4 {
+      width: 50%;
+    }
+  }
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-md-4 {
+      width: 100%;
+     
+    }
+  }
+  .mr-10{
+    margin-top: 5px;
+    padding: 0;
+  
+  }
+  </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-sm bg-warning navbar-dark">
@@ -66,7 +100,7 @@
   <h1 style="text-align: center;"></h1>
   <div class="row">
     <div class="col-md-4">
-      <div class="thumbnail border border-secondary">
+      <div class="thumbnail border border-secondary mr-10">
         <a href="./assets/images/silver/diva2.jpg" target="_blank">
           <img src="./assets/images/silver/diva2.jpg" alt="Lights" style="width:100%">
           <span ></span>
@@ -77,7 +111,7 @@
       </div>
     </div>
     <div class="col-md-4">
-      <div class="thumbnail border border-secondary">
+      <div class="thumbnail border border-secondary mr-10">
         <a href="./assets/images/silver/Diva-5.jpg" target="_blank">
           <img src="./assets/images/silver/Diva-5.jpg" alt="Nature" style="width:100%">
           <div class="caption">
@@ -86,8 +120,9 @@
         </a>
       </div>
     </div>
+    
     <div class="col-md-4">
-      <div class="thumbnail border border-secondary">
+      <div class="thumbnail border border-secondary mr-10">
         <a href="./assets/images/silver/Diva-1.jpg" target="_blank">
           <img src="./assets/images/silver/Diva-1.jpg" alt="Fjords" style="width:100%">
           <div class="caption">
@@ -99,7 +134,7 @@
   </div>
     <div class="row" style="margin-top: 5px;">
     <div class="col-md-4">
-        <div class="thumbnail border border-secondary">
+        <div class="thumbnail border border-secondary mr-10">
           <a href="./assets/images/silver/shiva.webp" target="_blank">
             <img src="./assets/images/silver/shiva.webp" alt="Nature" style="width:100%">
             <div class="caption">
@@ -109,7 +144,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="thumbnail border border-secondary">
+        <div class="thumbnail border border-secondary mr-10">
           <a href="./assets/images/silver/img1.webp" target="_blank">
             <img src="./assets/images/silver/img1.webp" alt="Nature" style="width:100%">
             <div class="caption">
@@ -119,7 +154,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="thumbnail border border-secondary">
+        <div class="thumbnail border border-secondary mr-10">
           <a href="./assets/images/silver/img2.webp" target="_blank">
             <img src="./assets/images/silver/img2.webp" alt="Nature" style="width:100%">
             <div class="caption">
